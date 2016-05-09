@@ -1,7 +1,11 @@
 class IrcDH1080
   module Base64
+    # The Base64 characters used for IRC DH1080
     B64 = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/'.freeze
 
+    # Encodes a binary string in modified IRC DH1080 Base64
+    # @param bin [String] binary encoded string to be encoded
+    # @return [String] the Base64 encoded string
     def self.encode(bin)
       str = ''
 
@@ -28,6 +32,9 @@ class IrcDH1080
       str
     end
 
+    # Decodes an IRC DH1080 Base64 string
+    # @param str [String] the Base64 encoded string
+    # @return [String] the decoded string
     def self.decode(str)
       l = str.bytesize
       return str if l < 2
