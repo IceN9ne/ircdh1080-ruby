@@ -1,7 +1,6 @@
 require "ircdh1080/version"
 require "ircdh1080/base64"
 
-require "digest"
 require "openssl"
 
 class IrcDH1080
