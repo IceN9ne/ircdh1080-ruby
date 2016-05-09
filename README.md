@@ -1,8 +1,6 @@
-# Ircdh1080
+# IrcDH1080
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/ircdh1080`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+A Ruby module for handling DH1080 key exchange for IRC.
 
 ## Installation
 
@@ -22,7 +20,15 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+dh = IrcDH1080.new
+pub_key = dh.pub_key
+
+# IRC DH1080 Base64 encoded public key
+peer_key = '...'
+
+shared_secret = dh.compute_key peer_key
+```
 
 ## Development
 
@@ -32,7 +38,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/ircdh1080.
+Bug reports and pull requests are welcome on GitHub at https://github.com/JasonIverson/ircdh1080-ruby.
 
 
 ## License
