@@ -6,8 +6,8 @@ require 'ircdh1080/version'
 Gem::Specification.new do |spec|
   spec.name          = "ircdh1080"
   spec.version       = IrcDH1080::VERSION
-  spec.authors       = ["Jason Iverson"]
-  spec.email         = ["iverson.jason.code@gmail.com"]
+  spec.authors       = ["IceN9ne"]
+  spec.email         = ["IceN9ne.code@gmail.com"]
 
   spec.summary       = %q{Ruby Diffie-Hellman 1080 Key-Exchange Module for IRC}
   spec.description   = %q{A Ruby module for handling DH1080 key exchange for IRC}
